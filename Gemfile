@@ -8,8 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg', '0.20.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -18,6 +17,25 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'jquery-rails', '4.3.1'
+gem 'rmagick', '2.16'
+gem 'angularjs-rails','1.5.6'
+gem 'chartjs-rails', '0.1'
+gem 'bower', '0.0.5'
+gem 'seedbank', '0.4.0'
+gem 'crypt_keeper', github: 'jmazzi/crypt_keeper'
+gem 'activeadmin', github: 'activeadmin'
+gem 'cancan', '1.6.10'
+gem 'draper', '3.0.0.pre1'
+gem 'pundit', '1.1'
+gem 'daemons', '1.2.4'
+gem 'crono', '1.1.2'
+gem 'combine_pdf', '1.0'
+gem 'prawn', '2.2'
+gem 'valid_email2'
+gem 'axlsx_rails'
+gem "loofah", ">=1.0.0"
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -49,6 +67,17 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+##SIDEKIQ
+gem 'sidekiq', '5.2.7'
+gem 'sinatra', require: false
+gem 'slim'
+gem "sidekiq-cron", "~> 1.1"
+gem 'sidekiq-limit_fetch', '~> 3.4'
+gem 'rest-client', '~> 2.0.1'
+gem 'devise', '~> 4.2'
+gem 'devise_token_auth', '~> 0.1.40'
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

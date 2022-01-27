@@ -70,7 +70,7 @@ group :development do
 end
 
 ##SIDEKIQ
-gem 'sidekiq', '5.2.7'
+gem 'sidekiq', '6.4.0'
 gem 'sinatra', require: false
 gem 'slim'
 gem "sidekiq-cron", "~> 1.1"

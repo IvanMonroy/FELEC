@@ -77,7 +77,7 @@ gem "sidekiq-cron", "~> 1.1"
 gem 'sidekiq-limit_fetch', '~> 3.4'
 gem 'rest-client', '~> 2.0.1'
 gem 'devise', '~> 4.2'
-gem 'devise_token_auth', '~> 0.1.40'
+gem 'devise_token_auth', '~> 1.1.3'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
